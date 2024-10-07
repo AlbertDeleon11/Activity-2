@@ -1,0 +1,36 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deleon site</title>
+
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+<style>
+
+</style>
+
+</head>
+<body>
+
+
+<div class="header">
+
+     <a href="{% url 'Home' %}" class="button" >Home</a>
+   <a href="{% url 'About' %}" class="button" >About</a>
+    <a href="{% url 'Contact' %}" class="button" >Contact</a>
+
+
+
+</div>
+<div class="content">
+    {% block content %}
+
+    {% endblock content %}
+</div>
+    <script src="{% static 'js/base.js' %}"></script>
+
+
+</body>
+</html>

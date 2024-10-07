@@ -1,0 +1,48 @@
+* {
+box-sizing: border-box;
+padding: 0;
+}
+
+body, html {
+margin: 0;
+padding: 0;
+height:93vh;
+width: 100%;
+font-family: Arial, sans-serif;
+}
+.header{
+    justify-content: center;
+    height:80px;
+    width:100%;
+    background-color:#1c9120;
+    text-align: center;
+    align-content: center;
+
+
+    }
+    .header a{
+    text-decoration:none;
+     color:white;
+     font-size:20px;
+     margin: 5px;
+
+    }
+     .button{
+    border:1px black solid;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+
+
+    }
+    .button:hover{
+    color:blue;
+    background-color:white;
+
+    }
+
+    .content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    }
