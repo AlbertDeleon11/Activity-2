@@ -81,6 +81,12 @@ DATABASES = {
     }
 }
 
+LOGIN_REDIRECT_URL = 'home'  # Redirect to the homepage or any other page after login
+LOGOUT_REDIRECT_URL = 'login'  # Redirect to the login page after logout
+LOGIN_URL = 'login'  # URL where users will be redirected if they're not logged in
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -106,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Manila'
 
 USE_I18N = True
 

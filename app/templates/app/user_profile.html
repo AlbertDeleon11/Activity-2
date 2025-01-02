@@ -1,0 +1,11 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+    <h2>User Profile</h2>
+    <p>Username: {{ user.username }}</p>
+    <p>Age: {{ users.age }}</p>
+    <p>Phone Number: {{ users.phone_number }}</p>
+    <p>Student: {% if users.profile.is_student %}Yes{% else %}No{% endif %}</p>
+    <p>Year: {{ users.year }}</p>
+    <p>Course: {{ users.course }}</p>
+{% endblock %}
